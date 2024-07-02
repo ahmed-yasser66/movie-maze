@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+  min-height: var(--min-height);
+}
+#root {
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #080808;
+  color: #eeeeee;
+}
+.font-monoton {
+  font-family: Monoton, Poppins, Tahoma, sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+.swiper-button-disabled {
+  opacity: 0.4;
+}
+.pagination-link-page {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 500;
+}
+.fully-hidden {
+  display: none;
+  opacity: 0;
+}
+.pagination-page {
+  border-radius: 50%;
+}
+.active-pagination-page {
+  background-color: rgb(66, 66, 66);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3737e8;
+}
+
+@layer utilities {
+  .position-center {
+    @apply left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
