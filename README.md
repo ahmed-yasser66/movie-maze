@@ -110,6 +110,4 @@ Contributions are welcome!
 <p align="center">
   Made with ❤️ by <a href="https://github.com/ahmed-yasser66">Ahmed Yasser</a>
 </p>
-npm install
-```
   
